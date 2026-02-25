@@ -4082,6 +4082,14 @@ body.is-preload #banner p {
 
 /* Footer */
 
+#footer ul.contact li.fa-x-twitter a {
+  display: inline !important;
+  line-height: 26.4px;
+  font-family: "Source Sans Pro", Helvetica, sans-serif !important;
+  font-weight: 300 !important;
+  -webkit-font-smoothing: auto;
+}
+
 #footer .inner {
   padding: 5em 0 3em 0;
   display: -moz-flex;
