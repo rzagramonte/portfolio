@@ -16,9 +16,9 @@
     <!-- Fonts with display=swap to avoid blocking text render -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic&display=swap" media="print" onload="this.media='all'" />
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic&display=swap" /></noscript>
-    <!-- Non-render-blocking main CSS -->
-    <link rel="preload" href="assets/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-    <noscript><link rel="stylesheet" href="assets/css/main.css" /></noscript>
+    <!-- Main stylesheet: render-blocking to avoid FOUC -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- Noscript fallback styles only when JS is disabled -->
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <script type="application/ld+json">
       {
