@@ -11,7 +11,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Roosiel Agramonte - Portfolio</title>
     <link rel="shortcut icon" href="https://u.cubeupload.com/rzagramonte/Logo500x500px9.png" />
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- LCP: preload hero background so it starts immediately -->
+    <link rel="preload" href="images/bg.jpg" as="image" />
+    <!-- Fonts with display=swap to avoid blocking text render -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic&display=swap" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic&display=swap" /></noscript>
+    <!-- Non-render-blocking main CSS -->
+    <link rel="preload" href="assets/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="assets/css/main.css" /></noscript>
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <script type="application/ld+json">
       {
@@ -59,37 +66,37 @@
             <h3 class="major">Latest projects</h3>
             <section class="features">
               <article>
-                <a href="https://foodship-app.onrender.com/" target="_blank" class="image"><img src="images/pic06.jpg" alt="Preview of Foodship app" /></a>
+                <a href="https://foodship-app.onrender.com/" target="_blank" class="image"><picture><source srcset="images/pic06.avif" type="image/avif" /><source srcset="images/pic06.webp" type="image/webp" /><img src="images/pic06.jpg" alt="Preview of Foodship app" width="2560" height="1604" loading="lazy" decoding="async" /></picture></a>
                 <h3 class="major">Foodship</h3>
                 <p>Foodship connects like-minded people over shared meals, fostering meaningful conversations and genuine connections.</p>
                 <a href="https://foodship-app.onrender.com/" target="_blank" class="special">Learn more</a>
               </article>
               <article>
-                <a href="https://www.infinitepossibilitiesinc.com/" target="_blank" class="image"><img src="images/pic05.jpg" alt="Preview of Infinite Possibilities, Inc. website" /></a>
+                <a href="https://www.infinitepossibilitiesinc.com/" target="_blank" class="image"><picture><source srcset="images/pic05.avif" type="image/avif" /><source srcset="images/pic05.webp" type="image/webp" /><img src="images/pic05.jpg" alt="Preview of Infinite Possibilities, Inc. website" width="2560" height="1604" loading="lazy" decoding="async" /></picture></a>
                 <h3 class="major">Infinite Possibilities, Inc.</h3>
                 <p>A custom-designed website built to support survivors of domestic violence and sexual assault.</p>
                 <a href="https://www.infinitepossibilitiesinc.com/" target="_blank" class="special">Learn more</a>
               </article>
               <article>
-                <a href="https://docs.google.com/presentation/d/e/2PACX-1vSa2Fc1LgftLxbxNDj2MS9nmWRuBSWfudkZFdJpUT8-FllRJR-FE3Wll7nHUP8TjKjJ6zfOaGUaemYZ/pub?start=false&loop=false&delayms=3000" target="_blank" class="image"><img src="images/pic04.jpg" alt="Preview of MVC (Model-View-Controller) lecture" /></a>
+                <a href="https://docs.google.com/presentation/d/e/2PACX-1vSa2Fc1LgftLxbxNDj2MS9nmWRuBSWfudkZFdJpUT8-FllRJR-FE3Wll7nHUP8TjKjJ6zfOaGUaemYZ/pub?start=false&loop=false&delayms=3000" target="_blank" class="image"><picture><source srcset="images/pic04.avif" type="image/avif" /><source srcset="images/pic04.webp" type="image/webp" /><img src="images/pic04.jpg" alt="Preview of MVC (Model-View-Controller) lecture" width="2560" height="1604" loading="lazy" decoding="async" /></picture></a>
                 <h3 class="major">MVC Lecture</h3>
                 <p>MVC (Model-View-Controller) lecture exploring the architecture that separates data (Model), user interface (View), and logic (Controller).</p>
                 <a href="https://docs.google.com/presentation/d/e/2PACX-1vSa2Fc1LgftLxbxNDj2MS9nmWRuBSWfudkZFdJpUT8-FllRJR-FE3Wll7nHUP8TjKjJ6zfOaGUaemYZ/pub?start=false&loop=false&delayms=3000" target="_blank" class="special">Learn more</a>
               </article>
               <article>
-                <a href="https://curlpower.netlify.app/" target="_blank" class="image"><img src="images/pic03.jpg" alt="Preview of Curl Power website" /></a>
+                <a href="https://curlpower.netlify.app/" target="_blank" class="image"><picture><source srcset="images/pic03.avif" type="image/avif" /><source srcset="images/pic03.webp" type="image/webp" /><img src="images/pic03.jpg" alt="Preview of Curl Power website" width="2560" height="1604" loading="lazy" decoding="async" /></picture></a>
                 <h3 class="major">Curl Power</h3>
                 <p>Simple and stylish website showcasing curly hair services.</p>
                 <a href="https://curlpower.netlify.app/" target="_blank" class="special">Learn more</a>
               </article>
               <article>
-                <a href="https://estateskylinellp.netlify.app/" target="_blank" class="image"><img src="images/pic02.jpg" alt="Preview of Estate Skyline LLP website" /></a>
+                <a href="https://estateskylinellp.netlify.app/" target="_blank" class="image"><picture><source srcset="images/pic02.avif" type="image/avif" /><source srcset="images/pic02.webp" type="image/webp" /><img src="images/pic02.jpg" alt="Preview of Estate Skyline LLP website" width="2560" height="1604" loading="lazy" decoding="async" /></picture></a>
                 <h3 class="major">Estate Skyline LLP</h3>
                 <p>Feature-rich real estate website with helpful resources and information.</p>
                 <a href="https://estateskylinellp.netlify.app/" target="_blank" class="special">Learn more</a>
               </article>
               <article>
-                <a href="https://level-u.netlify.app/" target="_blank" class="image"><img src="images/pic01.jpg" alt="Preview of Level Up website" /></a>
+                <a href="https://level-u.netlify.app/" target="_blank" class="image"><picture><source srcset="images/pic01.avif" type="image/avif" /><source srcset="images/pic01.webp" type="image/webp" /><img src="images/pic01.jpg" alt="Preview of Level Up website" width="2560" height="1604" loading="lazy" decoding="async" /></picture></a>
                 <h3 class="major">Level Up</h3>
                 <p>A fully responsive, elegant, and modern website for an inclusive fitness center.</p>
                 <a href="https://level-u.netlify.app/" target="_blank" class="special">Learn more</a>
@@ -103,7 +110,7 @@
         <!-- One -->
         <section id="one" class="wrapper alt spotlight style6">
           <div class="inner">
-			<img class="image" src="images/pic07.jpg" alt="" />
+			<picture class="image"><source srcset="images/pic07.avif" type="image/avif" /><source srcset="images/pic07.webp" type="image/webp" /><img src="images/pic07.jpg" alt="" width="5472" height="3648" loading="lazy" decoding="async" /></picture>
             <div class="content">
               <h2 class="major">1. Consultation</h2>
               <p>Our first step is a consultation where we'll uncover the essence of your project.</p>
@@ -113,7 +120,7 @@
         <!-- Two -->
         <section id="two" class="wrapper spotlight style5">
           <div class="inner">
-			<img class="image" src="images/pic08.jpg" alt="" />
+			<picture class="image"><source srcset="images/pic08.avif" type="image/avif" /><source srcset="images/pic08.webp" type="image/webp" /><img src="images/pic08.jpg" alt="" width="5184" height="3456" loading="lazy" decoding="async" /></picture>
             <div class="content">
               <h2 class="major">2. Proposal</h2>
               <p>A comprehensive project proposal with visual mockups will guide our next steps.</p>
@@ -125,7 +132,7 @@
         <!-- Three -->
         <section id="three" class="wrapper alt spotlight style4">
           <div class="inner">
-			<img class="image" src="images/pic09.jpg" alt="" />
+			<picture class="image"><source srcset="images/pic09.avif" type="image/avif" /><source srcset="images/pic09.webp" type="image/webp" /><img src="images/pic09.jpg" alt="" width="4831" height="3221" loading="lazy" decoding="async" /></picture>
             <div class="content">
               <h2 class="major">3. Creation</h2>
               <p>Clients can expect timely updates on progress and active involvement in the testing phase.</p>
@@ -136,7 +143,7 @@
         <!-- Four -->
         <section id="four" class="wrapper spotlight style3">
           <div class="inner">
-			<img class="image" src="images/pic10.jpg" alt="" />
+			<picture class="image"><source srcset="images/pic10.avif" type="image/avif" /><source srcset="images/pic10.webp" type="image/webp" /><img src="images/pic10.jpg" alt="" width="6720" height="4480" loading="lazy" decoding="async" /></picture>
             <div class="content">
               <h2 class="major">4. Launch & Support</h2>
               <p>Your satisfaction is top priority, and ongoing support is available to ensure peace of mind after project completion.</p>
@@ -164,12 +171,12 @@
       </section>
     </div>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+    <!-- Scripts: defer so parsing isn't blocked, execution order preserved -->
+    <script src="assets/js/jquery.min.js" defer></script>
+    <script src="assets/js/jquery.scrollex.min.js" defer></script>
+    <script src="assets/js/browser.min.js" defer></script>
+    <script src="assets/js/breakpoints.min.js" defer></script>
+    <script src="assets/js/util.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
   </body>
 </html>
